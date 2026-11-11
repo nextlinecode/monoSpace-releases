@@ -1,0 +1,33 @@
+name: "기능 제안 / Feature request"
+description: "monoSpace에 바라는 개선 사항을 알려주세요. / Suggest an improvement to monoSpace."
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        한국어와 영어 모두 가능합니다. 이 제안은 공개됩니다. 글이나 스크린샷에 개인 파일명, 경로, 계정 정보가 있으면 가려 주세요.
+
+        Korean and English are welcome. This suggestion is public. Redact private filenames, paths, and account details from text or screenshots.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: "하려던 작업과 불편한 점 / Goal and difficulty"
+      description: "무엇을 하려고 했고 어느 부분이 불편했나요? / What were you trying to do, and what made it difficult?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: "원하는 동작 / Desired behavior"
+      description: "어떻게 바뀌면 작업이 쉬워질까요? / What change would make the task easier?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: "사용 예시 / Example"
+      description: "어떤 상황에서 이 기능을 쓸지 예를 들어주세요. / Share an example of when you would use this."

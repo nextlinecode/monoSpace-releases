@@ -1,0 +1,57 @@
+name: "버그 신고 / Bug report"
+description: "monoSpace에서 발생한 문제를 알려주세요. / Report a problem in monoSpace."
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        한국어와 영어 모두 가능합니다. 이 신고는 공개됩니다. 글이나 스크린샷에 개인 파일명, 경로, 계정 정보가 있으면 가려 주세요.
+
+        Korean and English are welcome. This report is public. Redact private filenames, paths, and account details from text or screenshots.
+
+  - type: input
+    id: app-version
+    attributes:
+      label: "앱 버전과 빌드 / App version and build"
+      placeholder: "0.1.0 (build 12)"
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: "macOS 버전 / macOS version"
+      placeholder: "macOS 15.7"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: processor
+    attributes:
+      label: "Mac 칩 / Mac chip"
+      options:
+        - Apple Silicon
+        - Intel
+        - "모름 / Unknown"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "문제가 발생한 순서 / Steps to reproduce"
+      description: "어느 화면에서 무엇을 했나요? 가끔만 발생하면 함께 알려주세요. / Which screen and actions led to the problem? Mention if it happens intermittently."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: "실제 결과 / Actual result"
+      description: "화면에 무엇이 표시됐나요? / What did you see?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: "예상한 결과 / Expected result"
